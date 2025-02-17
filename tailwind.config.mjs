@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ["class"],
@@ -58,5 +57,5 @@ export default {
   		}
   	}
   },
-  plugins: ["tailwindcss-animate"],
+  plugins: [require("tailwindcss-animate")],
 };
