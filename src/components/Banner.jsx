@@ -66,16 +66,16 @@ const Banner = () => {
          className="mySwiper -mt-6 lg:w-6/12 mx-auto md:w-10/12 w-11/12"
       >
         <SwiperSlide>
-        <Image className="h-14 w-44 rounded-lg" src={banner1} alt=""/>
+        <Image className="h-14 w-44 rounded-lg object-cover" src={banner1} alt=""/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="h-14 w-44 rounded-lg" src={banner2} alt=""/>
+        <Image className="h-14 w-44 rounded-lg object-cover" src={banner2} alt=""/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="h-14 w-44 rounded-lg" src={banner1} alt=""/>
+        <Image className="h-14 w-44 rounded-lg object-cover" src={banner1} alt=""/>
         </SwiperSlide>
         <SwiperSlide>
-        <Image className="h-14 w-44 rounded-lg" src={banner3} alt=""/>
+        <Image className="h-14 w-44 rounded-lg object-cover" src={banner3} alt=""/>
         </SwiperSlide>
       </Swiper>
     </>
