@@ -2,11 +2,9 @@
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { Switch } from "@/components/ui/switch";
@@ -40,52 +38,7 @@ const Navbar = () => {
                 <NavigationMenuLink href="/gallery" className={`${pathname == '/gallery' ? 'text-pink-500 text-semibold border-b-2 border-pink-500': ''}`}>Gallery</NavigationMenuLink>
                 <NavigationMenuLink href="/blog" className={`${pathname == '/blog' ? 'text-pink-500 text-semibold border-b-2 border-pink-500': ''}`}>Blog</NavigationMenuLink>
                 <NavigationMenuLink href="/page" className={`${pathname == '/page' ? 'text-pink-500 text-semibold border-b-2 border-pink-500': ''}`}>Page</NavigationMenuLink>
-                <NavigationMenuLink href="/contact" className={`${pathname == '/contact' ? 'text-pink-500 text-semibold border-b-2 border-pink-500': ''}`}>Contact</NavigationMenuLink>
-                <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-                {/* <NavigationMenuContent className="left-0">
-                  <ul className=" w-[220px] shadow-md rounded-md px-5 py-4 space-y-2">
-                    <li>
-                      <NavigationMenuLink
-                        href="/roomCards"
-                        className="hover:text-pink-500"
-                      >
-                        Room Cards
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink
-                        href="/roomCarousel"
-                        className="hover:text-pink-500"
-                      >
-                        Room Carousel
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink
-                        href="/layout1"
-                        className="hover:text-pink-500"
-                      >
-                        Single Room - Layout 1
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink
-                        href="/layout2"
-                        className="hover:text-pink-500"
-                      >
-                        Single Room - Layout 2
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink
-                        href="/layout3"
-                        className="hover:text-pink-500"
-                      >
-                        Single Room - Layout 3
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
-                </NavigationMenuContent> */}
+                <NavigationMenuLink href="/contact" className={`${pathname == '/contact' ? 'text-pink-500 text-semibold border-b-2 border-pink-500': ''}`}>Contact</NavigationMenuLink >
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
