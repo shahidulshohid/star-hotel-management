@@ -7,6 +7,10 @@ import { Button } from "@/components/ui/button";
 import feature1 from "@/assets/feature1.jpg";
 import feature2 from "@/assets/feature2.jpg";
 import feature3 from "@/assets/feature3.jpg";
+import room1 from "@/assets/room1.jpg";
+import room2 from "@/assets/room2.jpg";
+import room3 from "@/assets/room3.jpg";
+import room4 from "@/assets/room4.jpg";
 
 const Home = () => {
   return (
@@ -52,18 +56,57 @@ const Home = () => {
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 text-center mt-2">
           Featured Specials
         </h2>
-        <div className="lg:flex justify-between items-center max-w-7xl mx-auto px-4 md:px-8 mt-12">
+        <div className="lg:flex justify-between items-center max-w-7xl mx-auto px-4 md:px-8 mt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="overflow-hidden">
+              <Image
+                className="object-cover hover:scale-125 transition duration-300"
+                src={feature1}
+                alt=""
+              />
+            </div>
+            <div className="overflow-hidden">
+              <Image
+                className="object-cover hover:scale-125 transition duration-300"
+                src={feature3}
+                alt=""
+              />
+            </div>
+            <div className="overflow-hidden">
+              <Image
+                className="object-cover hover:scale-125 transition duration-300"
+                src={feature2}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* room and suites  */}
+      <div className="mb-24">
+        <div className="flex items-center justify-center gap-1">
+          <GoArrowLeft className="mt-1 text-gray-400" />
+          <p className="text-lg text-gray-400">DISCOVER</p>
+          <GoArrowRight className="mt-1 text-gray-400" />
+        </div>
+        <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 text-center mt-2">
+          FRooms & Suites
+        </h2>
+        <div className="lg:flex justify-between items-center max-w-7xl mx-auto px-4 md:px-8 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             <div>
-            <Image className="object-cover" src={feature1} alt=""/>
+              <Image className="w-full h-full" src={room1} alt="" />
             </div>
-           <div>
-           <Image className="object-cover" src={feature3} alt=""/>
-           </div>
             <div>
-            <Image className="object-cover" src={feature2} alt=""/>
+              <Image className="w-full h-full" src={room2} alt="" />
             </div>
+            <div>
+              <Image className="w-full h-full" src={room3} alt="" />
             </div>
+            <div>
+              <Image className="w-full h-full" src={room4} alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
