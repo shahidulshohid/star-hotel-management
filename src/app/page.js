@@ -7,10 +7,6 @@ import { Button } from "@/components/ui/button";
 import feature1 from "@/assets/feature1.jpg";
 import feature2 from "@/assets/feature2.jpg";
 import feature3 from "@/assets/feature3.jpg";
-import room1 from "@/assets/room1.jpg";
-import room2 from "@/assets/room2.jpg";
-import room3 from "@/assets/room3.jpg";
-import room4 from "@/assets/room4.jpg";
 
 const Home = () => {
   return (
@@ -38,7 +34,7 @@ const Home = () => {
               hospitality.
             </p>
             <Button variant="destructive" className="text-lg">
-              See More
+              Details
             </Button>
           </div>
           <div className="w-full lg:w-1/2 mx-auto">
@@ -90,64 +86,68 @@ const Home = () => {
           <GoArrowRight className="mt-1 text-gray-400" />
         </div>
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 text-center mt-2">
-          FRooms & Suites
+          Rooms & Suites
         </h2>
         <div className="max-w-7xl mx-auto px-4 md:px-8 mt-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div
-              className="flex justify-center items-center"
+              className="flex justify-left items-end hover:scale-105 transition duration-300"
               style={{
                 backgroundImage: "url('/room1.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                backgroundRepeat:"no-repeat",
                 height: "280px",
                 width:"100%"
               }}
             >
-              <Button variant="destructive" className="text-lg">
-                See More
+              <Button variant="destructive" className="text-lg m-6">
+                Details
               </Button>
             </div>
           <div
-              className="flex justify-center items-center"
+              className="flex justify-left items-end hover:scale-105 transition duration-300"
               style={{
-                backgroundImage: "url('/room1.jpg')",
+                backgroundImage: "url('/room2.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                backgroundRepeat:"no-repeat",
                 height: "280px",
                 width:"100%"
               }}
             >
-              <Button variant="destructive" className="text-lg">
-                See More
+              <Button variant="destructive" className="text-lg m-6">
+                Details
               </Button>
             </div>
           <div
-              className="flex justify-center items-center"
+              className="flex justify-left items-end hover:scale-105 transition duration-300"
               style={{
-                backgroundImage: "url('/room1.jpg')",
+                backgroundImage: "url('/room3.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                backgroundRepeat:"no-repeat",
                 height: "280px",
                 width:"100%"
               }}
             >
-              <Button variant="destructive" className="text-lg">
-                See More
+              <Button variant="destructive" className="text-lg m-6">
+                Details
               </Button>
             </div>
           <div
-              className="flex justify-center items-center"
+              className="flex justify-left items-end hover:scale-105 transition duration-300"
               style={{
-                backgroundImage: "url('/room1.jpg')",
+                backgroundImage: "url('/room4.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                backgroundRepeat:"no-repeat",
                 height: "280px",
                 width:"100%"
               }}
             >
-              <Button variant="destructive" className="text-lg">
-                See More
+              <Button variant="destructive" className="text-lg m-6">
+                Details
               </Button>
             </div>
             
