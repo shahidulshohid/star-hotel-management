@@ -92,20 +92,65 @@ const Home = () => {
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 text-center mt-2">
           FRooms & Suites
         </h2>
-        <div className="lg:flex justify-between items-center max-w-7xl mx-auto px-4 md:px-8 mt-6">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 mt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div>
-              <Image className="w-full h-full" src={room1} alt="" />
+          <div
+              className="flex justify-center items-center"
+              style={{
+                backgroundImage: "url('/room1.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height: "280px",
+                width:"100%"
+              }}
+            >
+              <Button variant="destructive" className="text-lg">
+                See More
+              </Button>
             </div>
-            <div>
-              <Image className="w-full h-full" src={room2} alt="" />
+          <div
+              className="flex justify-center items-center"
+              style={{
+                backgroundImage: "url('/room1.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height: "280px",
+                width:"100%"
+              }}
+            >
+              <Button variant="destructive" className="text-lg">
+                See More
+              </Button>
             </div>
-            <div>
-              <Image className="w-full h-full" src={room3} alt="" />
+          <div
+              className="flex justify-center items-center"
+              style={{
+                backgroundImage: "url('/room1.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height: "280px",
+                width:"100%"
+              }}
+            >
+              <Button variant="destructive" className="text-lg">
+                See More
+              </Button>
             </div>
-            <div>
-              <Image className="w-full h-full" src={room4} alt="" />
+          <div
+              className="flex justify-center items-center"
+              style={{
+                backgroundImage: "url('/room1.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height: "280px",
+                width:"100%"
+              }}
+            >
+              <Button variant="destructive" className="text-lg">
+                See More
+              </Button>
             </div>
+            
           </div>
         </div>
       </div>
