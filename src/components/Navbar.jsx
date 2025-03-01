@@ -27,7 +27,7 @@ const Navbar = () => {
         <nav className="flex justify-between items-center max-w-7xl mx-auto px-4 md:px-8">
           {/* logo  */}
           <div>
-            <Link href="/">Star Hotel</Link>
+            <Link href="/" className="text-2xl md:text-3xl font-semibold">Star Hotel</Link>
           </div>
           {/* desktop menu  */}
           <NavigationMenu>

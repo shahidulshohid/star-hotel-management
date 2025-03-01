@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import feature1 from "@/assets/feature1.jpg";
 import feature2 from "@/assets/feature2.jpg";
 import feature3 from "@/assets/feature3.jpg";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -90,67 +91,94 @@ const Home = () => {
         </h2>
         <div className="max-w-7xl mx-auto px-4 md:px-8 mt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div
+            <div
               className="flex justify-left items-end hover:scale-105 transition duration-300"
               style={{
                 backgroundImage: "url('/room1.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                backgroundRepeat:"no-repeat",
+                backgroundRepeat: "no-repeat",
                 height: "280px",
-                width:"100%"
+                width: "100%",
               }}
             >
-              <Button variant="destructive" className="text-lg m-6">
-                Details
-              </Button>
+              <div className="flex justify-between items-center">
+                <Button variant="destructive" className="text-lg m-6">
+                  Details
+                </Button>
+                <Link href={`/rooms`}>
+                  <Button variant="destructive" className="text-lg m-6">
+                    See More
+                  </Button>
+                </Link>
+              </div>
             </div>
-          <div
+            <div
               className="flex justify-left items-end hover:scale-105 transition duration-300"
               style={{
                 backgroundImage: "url('/room2.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                backgroundRepeat:"no-repeat",
+                backgroundRepeat: "no-repeat",
                 height: "280px",
-                width:"100%"
+                width: "100%",
               }}
             >
-              <Button variant="destructive" className="text-lg m-6">
-                Details
-              </Button>
+              <div className="flex justify-between items-center">
+                <Button variant="destructive" className="text-lg m-6">
+                  Details
+                </Button>
+                <Link href={`/rooms`}>
+                  <Button variant="destructive" className="text-lg m-6">
+                    See More
+                  </Button>
+                </Link>
+              </div>
             </div>
-          <div
+            <div
               className="flex justify-left items-end hover:scale-105 transition duration-300"
               style={{
                 backgroundImage: "url('/room3.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                backgroundRepeat:"no-repeat",
+                backgroundRepeat: "no-repeat",
                 height: "280px",
-                width:"100%"
+                width: "100%",
               }}
             >
-              <Button variant="destructive" className="text-lg m-6">
-                Details
-              </Button>
+              <div className="flex justify-between items-center">
+                <Button variant="destructive" className="text-lg m-6">
+                  Details
+                </Button>
+                <Link href={`/rooms`}>
+                  <Button variant="destructive" className="text-lg m-6">
+                    See More
+                  </Button>
+                </Link>
+              </div>
             </div>
-          <div
+            <div
               className="flex justify-left items-end hover:scale-105 transition duration-300"
               style={{
                 backgroundImage: "url('/room4.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                backgroundRepeat:"no-repeat",
+                backgroundRepeat: "no-repeat",
                 height: "280px",
-                width:"100%"
+                width: "100%",
               }}
             >
-              <Button variant="destructive" className="text-lg m-6">
-                Details
-              </Button>
+              <div className="flex justify-between items-center">
+                <Button variant="destructive" className="text-lg m-6">
+                  Details
+                </Button>
+                <Link href={`/rooms`}>
+                  <Button variant="destructive" className="text-lg m-6">
+                    See More
+                  </Button>
+                </Link>
+              </div>
             </div>
-            
           </div>
         </div>
       </div>
