@@ -8,7 +8,7 @@ const inter = Inter({
 })
 
 const roboto = Roboto({
-  weight: ['400', '500', '300', '700', '800'],
+  weight: ['400', '500', '300', '700', '900'],
   subsets: ['latin'],
   display: 'swap',
 })
@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
         className={inter.className}
       >
         <Navbar></Navbar>
+        <div className={roboto.className}>robot font</div>
         <div>
         {children}
         </div>
